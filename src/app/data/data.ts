@@ -40,7 +40,7 @@ export const ghosts = [
     evidence: [EvidenceTypes.SpiritBox, EvidenceTypes.Fingerprints, EvidenceTypes.GhostWriting],
     description: 'A Spirit is the most common Ghost you will come across. However, it is still very powerful and dangerous. They are usually discovered at one of their hunting grounds after an unexplained death.',
     strength: 'Nothing.',
-    weakness: 'Using smudge sticks stops from starting for a long time.'
+    weakness: 'Using a smudge sticks stops the ghost from starting a hunt for a long time.'
   },
   {
     name: 'Wraith',

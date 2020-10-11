@@ -1,33 +1,54 @@
 <div class="page-container">
   <div>
-    <h1 style="text-align: center">Better Journal</h1>
+    <h1 class="text-align-center">Better Journal</h1>
   </div>
 
-  <div class="evidence-card-wrapper">
-    <mat-card class="evidence-card">
-      <mat-form-field appearance="outline" class="evidence-select">
-        <mat-label>Evidence 1</mat-label>
-        <mat-select [(ngModel)]="selectedEvidence1">
-          <mat-option [value]="null">None</mat-option>
-          <mat-option *ngFor="let evidence of allEvidence1" [value]="evidence.value">{{evidence.label}}</mat-option>
-        </mat-select>
-      </mat-form-field>
+  <div class="display-flex">
+    <div class="evidence-card-wrapper">
+      <mat-card class="evidence-card">
+        <div class="display-flex">
+          <mat-form-field appearance="outline" class="evidence-select">
+            <mat-label>Evidence 1</mat-label>
+            <mat-select [(ngModel)]="selectedEvidence1">
+              <mat-option [value]="null">None</mat-option>
+              <mat-option *ngFor="let evidence of allEvidence1" [value]="evidence.value">{{evidence.label}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
 
-      <mat-form-field appearance="outline" class="evidence-select">
-        <mat-label>Evidence 2</mat-label>
-        <mat-select [(ngModel)]="selectedEvidence2">
-          <mat-option [value]="null">None</mat-option>
-          <mat-option *ngFor="let evidence of allEvidence2" [value]="evidence.value">{{evidence.label}}</mat-option>
-        </mat-select>
-      </mat-form-field>
+        <div class="display-flex">
+          <mat-form-field appearance="outline" class="evidence-select">
+            <mat-label>Evidence 2</mat-label>
+            <mat-select [(ngModel)]="selectedEvidence2">
+              <mat-option [value]="null">None</mat-option>
+              <mat-option *ngFor="let evidence of allEvidence2" [value]="evidence.value">{{evidence.label}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
 
-      <mat-form-field appearance="outline" class="evidence-select">
-        <mat-label>Evidence 3</mat-label>
-        <mat-select [(ngModel)]="selectedEvidence3">
-          <mat-option [value]="null">None</mat-option>
-          <mat-option *ngFor="let evidence of allEvidence3" [value]="evidence.value">{{evidence.label}}</mat-option>
-        </mat-select>
-      </mat-form-field>
-    </mat-card>
+        <div class="display-flex">
+          <mat-form-field appearance="outline" class="evidence-select">
+            <mat-label>Evidence 3</mat-label>
+            <mat-select [(ngModel)]="selectedEvidence3">
+              <mat-option [value]="null">None</mat-option>
+              <mat-option *ngFor="let evidence of allEvidence3" [value]="evidence.value">{{evidence.label}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </mat-card>
+    </div>
+
+    <div class="ghost-card-wrapper">
+      <mat-card class="ghost-card">
+        <mat-card-title>{{selectedGhost.name}}</mat-card-title>
+        <mat-card-content>{{selectedGhost.description}}</mat-card-content>
+
+        <mat-card-subtitle>Strength</mat-card-subtitle>
+        <mat-card-content>{{selectedGhost.strength}}</mat-card-content>
+
+        <mat-card-subtitle>Weakness</mat-card-subtitle>
+        <mat-card-content>{{selectedGhost.weakness}}</mat-card-content>
+      </mat-card>
+    </div>
   </div>
 </div>
