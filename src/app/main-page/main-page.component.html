@@ -1,0 +1,33 @@
+<div class="page-container">
+  <div>
+    <h1 style="text-align: center">Better Journal</h1>
+  </div>
+
+  <div class="evidence-card-wrapper">
+    <mat-card class="evidence-card">
+      <mat-form-field appearance="outline" class="evidence-select">
+        <mat-label>Evidence 1</mat-label>
+        <mat-select [(ngModel)]="selectedEvidence1">
+          <mat-option [value]="null">None</mat-option>
+          <mat-option *ngFor="let evidence of allEvidence1" [value]="evidence.value">{{evidence.label}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="evidence-select">
+        <mat-label>Evidence 2</mat-label>
+        <mat-select [(ngModel)]="selectedEvidence2">
+          <mat-option [value]="null">None</mat-option>
+          <mat-option *ngFor="let evidence of allEvidence2" [value]="evidence.value">{{evidence.label}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="evidence-select">
+        <mat-label>Evidence 3</mat-label>
+        <mat-select [(ngModel)]="selectedEvidence3">
+          <mat-option [value]="null">None</mat-option>
+          <mat-option *ngFor="let evidence of allEvidence3" [value]="evidence.value">{{evidence.label}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-card>
+  </div>
+</div>

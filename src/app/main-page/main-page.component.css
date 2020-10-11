@@ -1,0 +1,21 @@
+.page-container {
+  padding: 0 30px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.evidence-card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.evidence-card {
+  padding: 20px 12px 0 12px;
+}
+
+.evidence-select {
+  width: 350px;
+  margin: 0 8px;
+}
