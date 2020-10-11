@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AllEvidence } from '../data/data';
+import { allEvidence } from '../data/data';
 
 @Component({
   selector: 'app-main-page',
@@ -7,13 +7,13 @@ import { AllEvidence } from '../data/data';
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent implements OnInit {
-  allEvidence1 = AllEvidence;
+  allEvidence1 = allEvidence;
   selectedEvidence1 = null;
 
-  allEvidence2 = AllEvidence;
+  allEvidence2 = allEvidence;
   selectedEvidence2 = null;
 
-  allEvidence3 = AllEvidence;
+  allEvidence3 = allEvidence;
   selectedEvidence3 = null;
 
   constructor() { }
